@@ -12,7 +12,6 @@ jobs:
         run: sudo xcode-select -switch /Applications/Xcode.app
 
       - name: Build Unsigned App
-        # 注意：将 -project 和 -scheme 后面的名字换成实际项目的名字
         run: |
           xcodebuild clean build \
             -project "WidgetExamples.xcodeproj" \
